@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+section{
+	width: 100%;
+	height: 900px;
+}
+
+#wrapper{
+	width: 500px;
+	height: 500px;
+	background-color: rgba(0,0,0,0.6);
+	position: relative;
+}
+#wrapper .green, #wrapper .red, #wrapper .blue {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	transition: all  3s;
+	}
+#wrapper .green{
+	background-color: green;
+	top: 120px;
+	left: 120px;
+}
+#wrapper .red{
+	background-color: red;
+	top: 120px;
+	left: 120px;
+}
+#wrapper .blue{
+	background-color: blue;
+	top: 120px;
+	left: 120px;
+}
+
+#wrapper .turquoise, #wrapper .cornflowerblue, #wrapper .black {
+	position: absolute;
+	transition: all  3s;
+	}
+
+#wrapper .turquoise{
+	width: 100px;
+	height: 100px;
+	background-color: turquoise;
+	bottom: 20px ;
+	right: 20px;
+}
+#wrapper .cornflowerblue{
+	width: 80px;
+	height: 80px;
+	background-color: cornflowerblue;
+	bottom: 70px ;
+	right: 70px;
+}
+#wrapper .black{
+	width: 60px;
+	height: 60px;
+	background-color: black;
+	bottom: 120px ;
+	right: 120px;
+}
+
+#wrapper:hover .green {
+	top: 20px;
+	left: 20px;
+}
+#wrapper:hover .red {
+	top: 70px;
+	left: 70px;
+}
+
+#wrapper:hover .cornflowerblue {
+	bottom: 30px ;
+	right: 30px;
+}
+#wrapper:hover .black {
+	bottom: 40px ;
+	right: 40px;
+}

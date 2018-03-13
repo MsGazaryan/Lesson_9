@@ -1,0 +1,101 @@
+
+/*pseudoclasses*/
+
+
+*{
+	margin: 0;
+}
+
+
+a:hover{
+	color: red;
+}
+
+
+/*как изначально выглядит ссылка*/
+a:link{
+	color: blue;
+	text-decoration: none;
+}
+
+/*ссылка после посещения*/
+a:visited{
+	color: yellow;
+}
+/*отрабатывает при нажатии*/
+a:clicked{
+	
+}
+
+/*ссылка преобретает фокус, когда на нее попадает фокус*/
+a:focus{
+	background-color: pink;
+
+}
+
+
+input{
+	background-color: none;
+	border: none;
+	border-bottom: 1px black solid;
+	outline: none;
+	transition: all .5s;
+
+}
+
+input:focus{
+	background-color: yellow;
+}
+
+/* :active, :disabled */
+
+
+ul li:first-child{
+	background-color: green;
+}
+
+ul li:last-child{
+	background-color: green;
+}
+
+ul li:nth-child(3){
+	background-color: orange;
+}
+
+/*odd - нечетный even-четный*/
+ul li:nth-child(odd){
+	border: 3px yellow solid;
+}
+ul li:nth-child(even){
+	border: 3px red solid;
+}
+
+ul li:nth-child(4) div{
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: red;
+	position: relative;
+}
+
+
+
+/*используется, чтобы не засорять разметку и не создавать див на диве*/
+ul li:nth-child(4) div:hover{
+	z-index: 1;
+}
+
+/* before */
+ul li:nth-child(4) div:before{
+	content: '';
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: yellow;
+	z-index: -1;
+}
+
+
